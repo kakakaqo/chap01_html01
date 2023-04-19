@@ -1,0 +1,31 @@
+<!-- 34_html_select_option.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"> <!-- 한글처리 -->
+	<script>
+	function getSelevtedValue(){
+		
+		var selectElement = document.getElementById("select");
+		var selectedValue = selectElement.value;
+		
+		console.log('선택된 과일', selectedValue);
+		alert("선택된 과일은 : " + selectedValue + " 입니다.");
+	}
+	
+	</script>
+</head>
+<body>
+
+<h2>Html select option(정식명칭 : 드롭다운 리스트)</h2>
+<label for="select">과일 선택:</label>
+
+<select id="select" name="fruit">
+	<option value="apple">사과</option>
+	<option value="banana">바나나</option>
+	<option value="orange">오렌지</option>
+
+</select>
+<button onclick="getSelevtedValue()">선택된 과일 얻기</button>
+</body>
+</html>

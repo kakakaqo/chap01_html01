@@ -1,0 +1,53 @@
+10_style_css_selector.html
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"> <!-- 한글처리 -->
+	
+	<!-- 셀렉터(선택자)
+		- Html Tag에 붙여놓은 id 속성, class 속성을 가진 요소를
+		특정해서 CSS를 적용하기 위해서 선택된 요소를 말한다. -->
+	
+	<!-- 내부(내장) CSS -->
+	<style>
+		
+		/* id 셀렉터 */
+		#ab{
+			background-color: powderblue;
+			color: black;
+			padding: 10px;
+			text-align: center;
+		}
+		
+		#ab2{
+			background-color: yellow;
+			color: black;
+			padding: 10px;
+			text-align: center;
+		}
+		
+		/* class 셀렉터 */
+		.myHeader{
+			background-color: lightblue;
+			color: black;
+			padding: 40px;
+			text-align: center;
+		}
+	</style>
+	
+</head>
+<body>
+
+	<!-- id 속성 --> <!-- id 속성에는 앞에 # -->
+	<div id="ab">아이디 속성 적용</div>
+	<div id="ab2">아이디 속성 적용2</div>
+	<input id="name" type="text" value="이름"/>
+	
+	
+	<!-- class 속성 --> <!-- class 속성에는 앞에 . -->
+	<h1 class="myHeader">My Header</h1>
+	<h1 class="myHeader">My Header2</h1>
+	<h1 class="myHeader">My Header3</h1>
+
+</body>
+</html>
